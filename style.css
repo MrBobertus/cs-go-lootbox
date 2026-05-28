@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "csgo";
+  src: url("https://mrbobertus.github.io/projects/web-dev/cs_go-lootbox/font/csgo.ttf");
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url("https://mrbobertus.github.io/projects/web-dev/cs_go-lootbox/img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(15px);
+}
+
+#input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#text {
+  resize: none;
+  font-size: larger;
+  padding: 10px;
+  margin: 15px;
+  border: none;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  text-align: center;
+  backdrop-filter: blur(20px);
+}
+
+#input-container * {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#output-container {
+  font-family: "csgo";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wheel {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wheel-item {
+  width: 250px;
+  height: 250px;
+  background-image: linear-gradient(rgb(146, 146, 146), rgb(230, 230, 230));
+  border-bottom: 8px solid #ccc;
+  margin-right: 10px;
+  font-size: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#wheel-selector {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: red;
+  z-index: 10;
+}
+
+.rarity-common {
+  border-color: grey;
+}
+.rarity-uncommon {
+  border-color: rgb(28, 146, 28);
+   background-image: linear-gradient(rgb(146, 146, 146), rgb(201, 201, 201), rgb(28, 146, 28));;
+}
+.rarity-rare {
+  border-color: rgb(71, 71, 247);
+   background-image: linear-gradient(rgb(146, 146, 146), rgb(201, 201, 201), rgb(71, 71, 247));;
+}
+.rarity-epic {
+  border-color: purple;
+   background-image: linear-gradient(rgb(146, 146, 146), rgb(201, 201, 201), purple);;
+}
+.rarity-legendary {
+  border-color: orange;
+   background-image: linear-gradient(rgb(146, 146, 146), rgb(201, 201, 201), orange);;
+}
+
+.rarity-ancient {
+  border-color: rgb(255, 0, 0);
+   background-image: linear-gradient(rgb(146, 146, 146), rgb(201, 201, 201), rgb(255, 0, 0));;
+}
+

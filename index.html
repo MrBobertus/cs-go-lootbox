@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS:GO Lootbox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio id="opening-box-sfx" src="audio/csgo_ui_crate_open.wav" preload="auto"></audio>
+    <audio id="spinning-box-sfx" src="audio/csgo_ui_crate_item_scroll.wav" preload="auto"></audio>
+    <audio id="result-box-sfx" src="audio/csgo_ui_crate_display.wav" preload="auto"></audio>
+    <audio id="common-box-sfx" src="audio/item_drop_common.wav" preload="auto"></audio>
+    <audio id="uncommon-box-sfx" src="audio/item_drop_uncommon.wav" preload="auto"></audio>
+    <audio id="rare-box-sfx" src="audio/item_drop_rare.wav" preload="auto"></audio>
+    <audio id="mythical-box-sfx" src="audio/item_drop_mythical.wav" preload="auto"></audio>
+    <audio id="legedary-box-sfx" src="audio/item_drop_legendary.wav" preload="auto"></audio>
+    <audio id="ancient-box-sfx" src="audio/item_drop_ancient.wav" preload="auto"></audio>
+    <div>
+      <div id="input-container">
+        <textarea
+          name="text"
+          id="text"
+          class="wheel"
+          cols="50"
+          rows="5"
+          placeholder="Knife, AK, M4A1, Deagle"
+        ></textarea>
+      </div>
+      <div id="output-container">
+        <ul id="list" class="wheel"></ul>
+        <div id="wheel-selector"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
